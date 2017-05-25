@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html class="no-js">
+<head>
+    <title>Coming soon</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;      
+            
+            position: absolute;
+            font-family: "Open Sans", arial, sans-serif;
+        }
+
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url('http://staging.belpro.net/105suite/wp-content/uploads/2017/03/88987072.jpg') no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;            
+        }        
+
+        .container {
+            padding: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;            
+            background: rgba(0,160,147,.8);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-direction: column;
+        }
+
+        header img {
+            width: 50%;
+        }
+
+        .coming-soon h1 {
+            color: #fff;
+            font-weight: normal;
+        }     
+
+        .Logos__container {
+            list-style: none;
+            padding-left: 0;
+
+            display: flex;
+            align-items: center;
+
+            margin-top: 50px;       
+        }
+
+        .Logos__container li {
+            margin: 0 15px;
+        }
+
+        .airbnb-logo {
+            width: 75px;
+            height: 24px;
+            background-position: -2px -2px;
+        }
+        .booking-logo {
+            width: 99px;
+            height: 16px;
+            background-position: -81px -6px;
+        }    
+        .expedia-logo {
+            width: 81px;
+            height: 23px;
+            background-position: -184px -3px;
+        }    
+        .logos {
+            display: block;
+            background-image: url('http://staging.belpro.net/105suite/wp-content/uploads/2017/03/logos.png')!important;
+        }      
+
+        /* Portrait and Landscape */
+        @media only screen 
+          and (min-device-width: 320px) 
+          and (max-device-width: 480px)
+          and (-webkit-min-device-pixel-ratio: 2) {
+            header img {
+                width: 100%;
+            }
+        }          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="http://staging.belpro.net/105suite/wp-content/uploads/2017/03/logo-retina-1.png" alt="105 Suites" title="105 Suites" />
+            <ul class="Logos__container">
+                <li><a href="https://www.airbnb.ae/rooms/13792435" target="_blank" class="logos airbnb-logo"></a></li>
+                <li><a href="https://www.booking.com/hotel/es/105-suites.en-gb.html?aid=356999;label=gog235jc-hotel-XX-es-105Nsuites-unspec-ae-com-L%3Aen-O%3AwindowsS10-B%3Achrome-N%3AXX-S%3Abo-U%3AXX-H%3As;sid=ca856639c63239b3c8d48abd801d1a4e;dist=0&sb_price_type=total&type=total&" target="_blank" class="logos booking-logo"></a></li>
+                <li><a href="https://www.expedia.com/Ibiza-Island-Hotels-105-Suites-Marina-Magna.h17669154.Hotel-Information" target="_blank" class="logos expedia-logo"></a></li>
+            </ul>
+        </header>
+        <div class="coming-soon">
+            <h1>105 Suites is Coming Soon!</h1>
+        </div>
+    </div>
+</body>
+</html>
